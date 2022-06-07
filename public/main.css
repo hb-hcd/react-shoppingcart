@@ -1,56 +1,23 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@hb-hcd 
-cmacmitt
-/
-f21-react-cart
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-f21-react-cart/src/App.css
-@cmacmitt
-cmacmitt create initial components
-Latest commit 056c68d 4 hours ago
- History
- 1 contributor
-179 lines (152 sloc)  2.28 KB
-   
 * {
   box-sizing: border-box;
 }
-
 body {
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-
 body,
 h1 {
   margin: 0;
 }
-
 a {
   color: #fff;
   text-decoration: none;
 }
-
 h2 {
   text-transform: uppercase;
   font-size: 18px;
   margin: 10px 0;
 }
-
 header {
   background: #000;
   padding: 10px;
@@ -60,36 +27,24 @@ header {
   align-items: center;
   margin-bottom: 5px;
 }
-
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-
-button {
-  border: 0;
-  padding: 0;
-  margin: 0;
-  background: none;
-}
-
 .cart-icon a {
   color: #fff;
   text-decoration: none;
 }
-
 .cart-icon {
   display: flex;
   color: #fff;
 }
-
 .cart-icon-values {
   display: grid;
   margin-right: 10px;
   align-items: end;
 }
-
 .cart-icon i {
   font-size: 20px;
   width: 43px;
@@ -100,17 +55,14 @@ button {
   text-align: center;
   border: 2px solid #fff;
 }
-
 .cart-icon div {
   font-size: 16px;
 }
-
 .items {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-
 .item {
   width: 300px;
   padding: 10px;
@@ -118,63 +70,46 @@ button {
   height: 550px;
   position: relative;
 }
-
 .item:hover {
   border: 2px solid #000;
   border-radius: 2px;
 }
-
 img {
   width: 100%;
   background-color: #f5f5f5;
 }
-
 .description,
 .price {
   margin: 10px 0;
 }
-
 .item button {
   width: 90%;
   background: #000;
+  border: 0;
   color: #fff;
   padding: 15px 0;
   font-size: 17px;
+  cursor: pointer;
   position: absolute;
   bottom: 0;
   margin: 10px auto;
   left: 0;
   right: 0;
 }
-
 .cart {
   width: 420px;
-  padding: 0 20px 20px 20px;
   margin: auto;
-  position: absolute;
-  right: 0;
-  top: 67px;
-  background: #5a5a5a;
-  z-index: 999;
-  color: black;
 }
-
 .cart-item {
   display: grid;
-  grid-template-columns: 3fr 3fr 3fr 1fr;
+  grid-template-columns: 3fr 3fr 1fr;
   padding: 5px 10px;
   align-items: center;
 }
-
 .cart-item:nth-of-type(odd) {
   background-color: #eaeaea;
 }
-
-.cart-item:nth-of-type(even) {
-  background-color: #8b8b8b;
-}
-
-.cart-item .remove-from-cart {
+.cart-item button {
   color: #980000;
   background-color: transparent;
   border: 0;
@@ -182,26 +117,17 @@ img {
   font-size: 22px;
   text-align: right;
 }
-
 .total {
   font-size: 20px;
   margin: 10px;
   font-weight: 700;
   text-align: right;
 }
-
 .keep-shopping i {
   margin-top: 20px;
   margin-right: 10px;
 }
-
 a.keep-shopping {
   margin-top: 20px;
   color: #000;
-}
-
-.quantity button {
-  color: black;
-  font-size: 15px;
-  padding: 0 5px;
 }
